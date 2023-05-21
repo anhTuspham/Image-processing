@@ -7,7 +7,7 @@ st.set_page_config(
     page_title="Phát hiện khuôn mặt"
 )
 
-st.subheader('Phát hiện khuôn mặt')
+st.write("# Phát hiện khuôn mặt")
 FRAME_WINDOW = st.image([])
 deviceId = 0
 cap = cv.VideoCapture(deviceId)

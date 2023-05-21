@@ -8,7 +8,7 @@ st.set_page_config(
     page_title="Nhận dạng khuôn mặt"
 )
 
-st.subheader('Nhận dạng khuôn mặt')
+st.write("# Nhận dạng khuôn mặt")
 FRAME_WINDOW = st.image([])
 cap = cv.VideoCapture(0)
 
@@ -36,7 +36,7 @@ if st.session_state.stop == True:
 
 
 svc = joblib.load('svc.pkl')
-mydict = ['BanKiet', 'BanNghia', 'BanNguyen', 'BanThanh', 'SangSang', 'ThayDuc']
+mydict = ['BanKiet', 'BanNghia','BanPhamAnhTu', 'BanThanh', 'SangSang', 'ThayDuc']
 
 def visualize(input, faces, fps, thickness=2):
     if faces[1] is not None:
