@@ -1,5 +1,4 @@
-##  Phạm Anh Tú 20110743
+##  Phạm Anh Tú 20110742
 
-## This is website which i build to deploy my image-processing by Streamlit
 
 ![img.png](img/img.png)
