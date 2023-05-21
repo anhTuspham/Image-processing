@@ -27,7 +27,7 @@ if press:
 print('Trang thai nhan Stop', st.session_state.stop)
 
 if 'frame_stop' not in st.session_state:
-    frame_stop = cv.imread('stop.jpg')
+    frame_stop = cv.imread('img/stop.jpg')
     st.session_state.frame_stop = frame_stop
     print('Đã load stop.jpg')
 
@@ -55,7 +55,7 @@ def visualize(input, faces, fps, thickness=2):
 
 if __name__ == '__main__':
     detector = cv.FaceDetectorYN.create(
-        'face_detection_yunet_2022mar.onnx',
+        'onnx/face_detection_yunet_2022mar.onnx',
         "",
         (320, 320),
         0.9,
@@ -63,7 +63,7 @@ if __name__ == '__main__':
         5000)
     
     recognizer = cv.FaceRecognizerSF.create(
-    'face_recognition_sface_2021dec.onnx',"")
+    'onnx/face_recognition_sface_2021dec.onnx',"")
 
     tm = cv.TickMeter()
 
